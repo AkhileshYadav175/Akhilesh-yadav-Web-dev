@@ -1,0 +1,163 @@
+.process {
+  position: relative;
+  padding-top: 160px;
+  overflow: hidden;
+}
+
+.pStage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 90px 0 40px;
+}
+
+.pHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  font-size: clamp(36px, 4.2vw, 60px);
+  margin: 0;
+}
+
+.pGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 44px;
+  align-items: start;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.step:nth-child(1) {
+  margin-top: 30px;
+}
+
+.step:nth-child(2) {
+  margin-top: 100px;
+}
+
+.step:nth-child(3) {
+  margin-top: 0;
+}
+
+.step:nth-child(4) {
+  margin-top: 70px;
+}
+
+.panel {
+  height: 138px;
+  border-radius: 14px;
+  background: var(--ink);
+  color: #8C8C98;
+  padding: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.7;
+  overflow: hidden;
+  position: relative;
+}
+
+.panel :global(.fn) {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel :global(.c1) {
+  color: #B9AEFF;
+}
+
+.panel :global(.c2) {
+  color: #9FE3C3;
+}
+
+.panel :global(.c3) {
+  color: #FFC9A8;
+}
+
+.num {
+  font-size: 84px;
+  font-weight: 500;
+  line-height: 0.85;
+  letter-spacing: -0.07em;
+  overflow: hidden;
+}
+
+.num span {
+  display: inline-block;
+}
+
+.step h3 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.step p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.bar {
+  height: 1px;
+  background: var(--ink);
+  transform-origin: left;
+}
+
+.shape {
+  position: absolute;
+  pointer-events: none;
+  color: #DADAE0;
+  z-index: 0;
+}
+
+.shape svg {
+  width: 100%;
+  height: 100%;
+}
+
+.sCircle {
+}
+
+.sTri {
+}
+
+.sSq {
+}
+
+@media (max-width: 1020px) {
+  .pGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .step:nth-child(n) {
+    margin-top: 0;
+  }
+  .step:nth-child(2),
+  .step:nth-child(4) {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pGrid {
+    grid-template-columns: 1fr;
+  }
+  .step:nth-child(n) {
+    margin-top: 0;
+  }
+}
+

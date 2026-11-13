@@ -1,0 +1,43 @@
+.mobileMenu {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 40px;
+  visibility: hidden;
+  clip-path: inset(0 0 100% 0);
+}
+
+.mobileMenu a {
+  font-size: 46px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.mobileMenu a:hover {
+  opacity: 0.8;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+

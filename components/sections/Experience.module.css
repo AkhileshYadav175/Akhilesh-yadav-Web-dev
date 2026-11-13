@@ -1,0 +1,76 @@
+.sec {
+  padding: 160px 0 0;
+  position: relative;
+}
+
+.secHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.heading {
+  margin: 0;
+}
+
+.exp {
+  margin-top: 70px;
+}
+
+.erow {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 30px;
+  padding: 34px 0;
+  position: relative;
+}
+
+.erow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--line);
+  transform-origin: left;
+}
+
+.erow h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.co {
+  font-size: 15px;
+  color: var(--accent-text);
+  margin-top: 4px;
+}
+
+.erow p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.inkLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--ink);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 1;
+}
+
+@media (max-width: 1020px) {
+  .erow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+

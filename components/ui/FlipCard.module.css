@@ -1,0 +1,23 @@
+.flip {
+  perspective: 1400px;
+}
+
+.flipIn {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.backFace {
+  transform: rotateY(180deg);
+}
+

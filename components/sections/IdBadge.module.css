@@ -1,0 +1,191 @@
+.sway {
+  position: absolute;
+  top: -170px;
+  transform-origin: 50% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hang {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lanyard {
+  width: 34px;
+  height: 260px;
+  background: var(--ink);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.lanyard span {
+  writing-mode: vertical-rl;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #9C9CA8;
+  white-space: nowrap;
+  padding-top: 10px;
+}
+
+.clip {
+  width: 46px;
+  height: 30px;
+  border-radius: 6px 6px 10px 10px;
+  background: linear-gradient(#E9E9EC, #BFC0C6);
+  border: 1px solid #B4B5BB;
+  margin-top: -2px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+}
+
+.clip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 16px;
+  border: 3px solid #B4B5BB;
+  border-top: 0;
+  border-radius: 0 0 9px 9px;
+}
+
+.badgeFlip {
+  margin-top: 6px;
+}
+
+.badgeInner {
+  width: 300px;
+  height: 430px;
+}
+
+.badgeFront,
+.badgeBack {
+  border: 1px solid var(--line);
+  box-shadow: 0 40px 80px -30px rgba(17, 17, 19, 0.25), 0 2px 0 rgba(255, 255, 255, 0.8) inset;
+}
+
+.badgeFront {
+  background: var(--paper);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hole {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 8px;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.avatar {
+  flex: 1;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #E7E2FF, #F6E7F1 55%, #FFF1DE);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar b {
+  font-size: 92px;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  color: var(--ink);
+}
+
+.avatar small {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.role {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.badgeFront h3 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.backIn {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--ink);
+}
+
+.backIn h4 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.kv {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.kv div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dashed rgba(17, 17, 19, 0.15);
+  padding-bottom: 5px;
+}
+
+.kv span:first-child {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.backFoot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+

@@ -1,0 +1,180 @@
+.swayWrapper {
+  transform-origin: 50% 0;
+  flex: none;
+  scroll-snap-align: center;
+}
+
+.hang {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: 50% 0;
+}
+
+.string {
+  width: 1.4px;
+  background: #A9A9B2;
+  transform-origin: top;
+  display: block;
+}
+
+.peg {
+  width: 14px;
+  height: 22px;
+  border-radius: 3px;
+  background: linear-gradient(#F1F1F3, #C9CAD0);
+  border: 1px solid #B7B8BE;
+  margin-top: -4px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.pcardFlip {
+  margin-top: -8px;
+  width: 262px;
+  height: 360px;
+}
+
+.pcardInner {
+  width: 262px;
+  height: 360px;
+}
+
+.pcardFront,
+.pcardBack {
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 60px -30px rgba(17, 17, 19, 0.28);
+}
+
+.pcardFront {
+  background: var(--paper);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.thumb {
+  height: 178px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.t1 {
+  background: #ECE8FF;
+}
+
+.t2 {
+  background: #FFEBDD;
+}
+
+.t3 {
+  background: #E0F3EC;
+}
+
+.t4 {
+  background: #E2EEFB;
+}
+
+.ui {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+}
+
+.pcardFront h3 {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.foot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ink);
+  display: inline-block;
+}
+
+.backIn {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--ink);
+}
+
+.backIn h4 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.backIn p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink2);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips span {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(17, 17, 19, 0.08);
+}
+
+.backFoot {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.backLinks {
+  display: flex;
+  gap: 14px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.backLinks a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 1px solid currentColor;
+}
+

@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 160px;
+  border-top: 1px solid var(--line);
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
